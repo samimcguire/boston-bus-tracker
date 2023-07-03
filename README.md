@@ -4,7 +4,7 @@
 
 In this project, you will be able to track a busline in Boston. Every 15 seconds the icons will update, changing color with the direction that the bus is traveling. This project was to help learn asynchronous code and API Keys.
 
-## How to Run: This is information someone would use to get started running your project on their machine.
+## How to Run
 
 To run, please download the files and load the index.html in your browser.
 
@@ -12,7 +12,7 @@ To run, please download the files and load the index.html in your browser.
 
 There are no future improvements planned at this time.
 
-## License information: This should include information about the MIT license. 
+## License information
 
 MIT License
 

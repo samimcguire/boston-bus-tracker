@@ -4,16 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.112.5">
     <title>Boston Bus Tracker</title>
   </head>
 
-  <body>
-	<script src="http://maps.google.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg"></script>
-	<div id="map" style="width:1024px; height:768px"></div>
-	
-	<script>
+<script src="http://maps.google.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg"></script>
+<div id="map" style="width:1024px; height:768px"></div>
+
+<script>
 	var map;
 	var markers = [];
 	
@@ -25,8 +23,8 @@
 			mapTypeId : google.maps.MapTypeId.ROADMAP
 		};
 		var element = document.getElementById('map');
-	  	map = new google.maps.Map(element, myOptions);
-	  	addMarkers();
+		map = new google.maps.Map(element, myOptions);
+		addMarkers();
 	}
 	
 	// Add bus markers to map
@@ -62,8 +60,8 @@
 		var icon = getIcon(bus);
 		var marker = new google.maps.Marker({
 		    position: {
-		    	lat: bus.attributes.latitude, 
-		    	lng: bus.attributes.longitude
+			lat: bus.attributes.latitude, 
+			lng: bus.attributes.longitude
 		    },
 		    map: map,
 		    icon: icon,
@@ -87,8 +85,8 @@
 	
 		// move icon to new lat/lon
 	    marker.setPosition( {
-	    	lat: bus.attributes.latitude, 
-	    	lng: bus.attributes.longitude
+		lat: bus.attributes.latitude, 
+		lng: bus.attributes.longitude
 		});
 	}
 	
@@ -100,7 +98,6 @@
 	}
 	
 	window.onload = init;
-	
-	</script>
- </body>
+
+</script>
 </html>
